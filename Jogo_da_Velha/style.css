@@ -4,7 +4,7 @@
 }
 #header{
     text-align: center;
-    background-color: brown;
+    background-color:rgb(198, 172, 143);
     padding: 30px;
     border-bottom: black;
     border-style: solid;
@@ -22,22 +22,40 @@
     height: 40px;
 }
 .container-xy{
-    ;
     padding: 10px;
     background-color: aquamarine;
+    text-align: center;
+}
+#choose-x{
+    background-color: rgb(34, 51, 59);
+    color: white;
+    font-size: 20px;
+}
+#choose-y{
+    background-color: rgb(94, 80, 63);
+    color: white;
+    font-size: 20px;
     text-align: center;
 }
 
 .canva{
     display: inline-block;
+    justify-content: center;
+    background-color: #f6fff8;
     width: 60px;
     height: 60px;
-    border: 1px solid black;  
+    border: 1px solid black;
+    color: white;
+    font-size: 30px;
 }
 #container-canva{
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px;
     background-color: aqua;
-    text-align: center;   
+    
 }
 #button{
     margin-top: 30px;
