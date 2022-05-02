@@ -22,24 +22,33 @@
     height: 40px;
 }
 .container-xy{
+    display: flex;
+    justify-content: center;
     padding: 10px;
     background-color: aquamarine;
-    text-align: center;
+    
 }
 #choose-x{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(34, 51, 59);
     color: white;
     font-size: 20px;
 }
 #choose-y{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(94, 80, 63);
     color: white;
     font-size: 20px;
-    text-align: center;
+    
 }
 
 .canva{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-color: #f6fff8;
     width: 60px;
@@ -49,6 +58,10 @@
     font-size: 30px;
 }
 #container-canva{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: auto;
     margin-left: auto;

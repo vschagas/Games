@@ -24,7 +24,27 @@ let changeButton = document.querySelectorAll('.block');
         }
     }creatElements()  
 
-    function changeColor(){};
+    
+
+    function changeColor(event){
+        let type = document.querySelector('.selected')
+        event.target.innerText = type.innerText
+        let textBase = type.innerText
+        let box = document.querySelectorAll('.canva');
+            for(let i=0; i<box.length; i+=1){
+                let compare = box[i].innerText
+                if(compare[0]===x && compare[1]===x && compare[2]===x){
+                    console.log('acerto');
+                }
+            }
+            
+        
+        
+
+
+
+        
+    }changeColor;
     
     function captureColor (){
         let x = document.getElementById('choose-x');
@@ -45,47 +65,29 @@ let changeButton = document.querySelectorAll('.block');
         })
     }captureColor();
 
-    function changeColor(event){
-        let type = document.querySelector('.selected')
-        event.target.innerText = type.innerText
-        
-    }changeColor;
+   
 
 
-    
+    let x = document.getElementById('choose-x').innerText
+    let o = document.getElementById('choose-y').innerText
     function sendColor(){ 
         let lineColor = document.querySelectorAll('.canva')      
         for(i=0; i<lineColor.length; i+=1){ 
             lineColor[i].addEventListener('click', function(event){
-                let captureColor = document.querySelector('.selected');
-                let x = document.getElementById('choose-x').innerText
-                let y = document.getElementById('choose-y').innerText
-                
+                let captureColor = document.querySelector('.selected');        
                 
                 if(captureColor.id === 'choose-x'){
-                event.target.style.backgroundColor = 'rgb(34, 51, 59)'
-                /* console.log(event.target);
-                console.log(x); */
+                event.target.style.backgroundColor = 'rgb(34, 51, 59)';
+                /* console.log(x); */
                 }
                 if(captureColor.id === 'choose-y'){
                     event.target.style.backgroundColor = 'rgb(94, 80, 63)';
+                    /* console.log(o); */
                 }
-
-
-            })
-            const count = document.getElementsByClassName('canva');
-                console.log(count[0]);
+            }) 
         }
 
     }sendColor();
-
-function checkResult(){
-   
-
-}checkResult();  
-
-
-
 
 function resetColor(){
     let button = document.getElementById('button');
